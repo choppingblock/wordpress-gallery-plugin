@@ -24,7 +24,7 @@ add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
  */
 function prefix_add_my_stylesheet() {
     // Respects SSL, Style.css is relative to the current file
-    wp_register_style( 'prefix-style', plugins_url('wordpress-gallery-plugin.css', __FILE__) );
+    wp_register_style( 'prefix-style', plugins_url('/wordpress-gallery-plugin.css', __FILE__) );
     wp_enqueue_style( 'prefix-style' );
 }
 
